@@ -1,0 +1,460 @@
+/*
+Documentation
+
+Infinity UI is a modern and new UI designed with the focus of modern responsive web development & design. Since today mobile devices are more popular than their larger counterparts, the UI library, which indludes a CSS and JS library, is built primarily for mobile devices first and secondly adapted for larger screens. 
+
+*Html content should go into the main parent div "iui-grid" which is for mobile view
+*iui-grid-large is designed for larger devices, laptops, desktops, etc.
+*Every class in InfinityUI has the prefix "iui-"
+If you want to remove all styles from a specific element add class "iui-remove-styles" (this class is handled by jquery which removes all the styling using the removeattr function)
+All colors are carefully chosen from popular website color styles so your website's look stays contemporary and vibrant
+
+Version: Infinity UI 1.0.0 
+License: Scorpion Edge Designs Ltd. (Open Source)
+
+Please view our documentation to get familiar with the framework and css classes
+
+A minified version as well is available (.min extension).
+
+Infinity UI
+
+A Scorpion Edge UI design
+
+*/
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.iui-montserrat {
+    font-family: Montserrat;
+}
+h1,h2,h3,h4,h5,h6,p {
+    position:relative;
+}
+/*Main Container - Can contain special code from JS*/
+.iui-container {
+    
+}
+/*Grids*/
+
+.iui-grid-large {
+    position: relative;
+    width: 97%;
+    margin: auto;
+}
+
+.iui-col-center {
+    text-align: center;
+}
+.iui-absocenter {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    text-align:center;
+}
+
+.iui-spacer-s {
+    height: 30px
+}
+.iui-spacer-l {
+    height: 50px;
+}
+.iui-spacer-xl {
+    height: 150px;
+}
+ 
+/*Text*/
+.iui-heading-xs {
+    font-size: 14px;
+}
+.iui-heading-s {
+    font-size: 16px;
+}
+.iui-heading-m {
+    font-size: 22px;
+}
+.iui-heading-l {
+    font-size: 30px;
+}
+.iui-heading-l2 {
+    font-size: 35px;
+}
+.iui-heading-l3 {
+    font-size: 40px;
+}
+.iui-heading-xl {
+    font-size: 45px;
+}
+.iui-heading-xxl {
+    font-size: 60px;
+}
+.iui-nobreak {
+    white-space: nowrap;
+}
+.iui-uppercase {
+    text-transform: uppercase;
+}
+
+/*colors*/
+.iui-red{color:#ff0f27!important} .iui-white{color:white!important}.iui-orange{color:#ff5d00!important}.iui-magenta{color:#f50062!important}.iui-purple{color:#bf00ff!important}.iui-deeppurple{color:#6a00ff!important}.iui-skyblue{color:#08bdff!important}.iui-dodgeblue{color:#1e90ff!important}.iui-blue{color:#0072e0!important}.iui-navy{color:#88e3d7!important}.iui-aqua{color:#00ffe1!important}.iui-teal{color:#009688!important}.iui-green{color:#4caf50!important}.iui-lime{color:#cddc39!important}.iui-forestgreen{color:#0e8a00!important}.iui-lightgreen{color:#97e388!important}.iui-yellow{color:#ffeb3b!important}.iui-paleyellow{color:#ffc!important}.iui-amber{color:#ffc83d!important}.iui-goldlight{color:#d4ca4a!important}.iui-gold{color:#d1a000!important}.iui-brown{color:#795548!important}.iui-khaki{color:khaki!important}.iui-pink{color:#ffabc7!important}.iui-deeporange{color:#ff5722!important}.iui-lightgray{color:#f1f1f1!important}.iui-gray{color:#e6e6e6!important}.iui-darkgray{color:#616161!important}.iui-bluegray{color:#91a7ba!important}.iui-peach{color:#ffb99c!important}.iui-prune{color:#ffce9c!important}.iui-salmon{color:#ffd6d6!important} .iui-black {color: black!important} .iui-beige{color:#b7af7d!important;}
+/*background colors */
+.iui-red-bg{background-color:#ff0f27!important} iui-white-bg{background:white;} .iui-orange-bg{background-color:#ff5d00!important}.iui-magenta-bg{background-color:#f50062!important}.iui-purple-bg{background-color:#bf00ff!important}.iui-deeppurple-bg{background-color:#6a00ff!important}.iui-skyblue-bg{background-color:#08bdff!important}.iui-dodgeblue-bg{background:#1e90ff!important;}.iui-blue-bg{background-color:#0072e0!important}.iui-navy-bg{background-color:#88e3d7!important}.iui-aqua-bg{background-color:#00ffe1!important}.iui-teal-bg{background-color:#009688!important}.iui-green-bg{background-color:#4caf50}.iui-lime-bg{background-color:#cddc39!important}.iui-forestgreen-bg{background-color:#0e8a00!important}.iui-lightgreen-bg{background-color:#97e388!important}.iui-yellow-bg{background-color:#ffeb3b!important}.iui-paleyellow-bg{background-color:#ffc!important}.iui-amber-bg{background-color:#ffc83d!important}.iui-goldlight-bg{background-color:#d4ca4a!important}.iui-gold-bg{background-color:#d1a000!important}.iui-brown-bg{background-color:#795548!important}.iui-khaki-bg{background-color:khaki}.iui-pink-bg{background-color:#ffabc7!important}.iui-deeporange-bg{background-color:#ff5722!important}.iui-lightgray-bg{background-color:#f1f1f1!important}.iui-gray-bg{background-color:#e6e6e6!important}.iui-darkgray-bg{background-color:#616161!important}.iui-bluegray-bg{background-color:#91a7ba!important}.iui-peach-bg{background-color:#ffe5b4!important}.iui-prune-bg{background-color:#ffce9c!important}.iui-salmon-bg{background-color:#ffd6d6!important} .iui-black-bg{background-color: black!important} .iui-beige-bg{background:#b7af7d;}.iui-igray-bg{background:#f5f5f5;}
+.iui-red-bd{border:2px solid #ff0f27} .iui-white-bd{border:white;}.iui-orange-bd{border:2px solid #ff5d00}.iui-magenta-bd{border:2px solid #f50062}.iui-purple-bd{border:2px solid #bf00ff}.iui-deeppurple-bd{border:2px solid #6a00ff}.iui-skyblue-bd{border:2px solid #08bdff}.iui-dodgeblue-bd{border:2px solid #1e90ff;}.iui-blue-bd{border:2px solid #0072e0}.iui-navy-bd{border:2px solid #88e3d7}.iui-aqua-bd{border:2px solid #00ffe1}.iui-teal-bd{border:2px solid #009688}.iui-green-bd{border:2px solid #4caf50}.iui-lime-bd{border:2px solid #cddc39}.iui-forestgreen-bd{border:2px solid #0e8a00}.iui-lightgreen-bd{border:2px solid #97e388}.iui-yellow-bd{border:2px solid #ffeb3b}.iui-paleyellow-bd{border:2px solid #ffc}.iui-amber-bd{border:2px solid #ffc83d}.iui-goldlight-bd{border:2px solid #d4ca4a}.iui-gold-bd{border:2px solid #d1a000}.iui-brown-bd{border:2px solid #795548}.iui-khaki-bd{border:khaki}.iui-pink-bd{border:2px solid #ffabc7}.iui-deeporange-bd{border:2px solid #ff5722}.iui-lightgray-bd{border:2px solid #f1f1f1}.iui-gray-bd{border:2px solid #e6e6e6}.iui-darkgray-bd{border:2px solid #616161}.iui-bluegray-bd{border:2px solid #91a7ba}.iui-peach-bd{border:2px solid #ffb99c}.iui-prune-bd{border:2px solid #ffce9c}.iui-salmon-bd{border:2px solid #ffd6d6} .iui-black-bd {border: 2px solid black} .iui-beige-bd{border:2px solid #b7af7d;}
+
+.iui-weight1 {
+    font-weight: 300;
+}
+.iui-weight2 {
+    font-weight: 400;
+}
+.iui-weight3 {
+    font-weight: 500;
+}
+.iui-weight-extra {
+    font-weight: 600;
+}
+
+.iui-section {
+    width: 100%;
+    padding: 20px 0px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;
+}
+.iui-section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.iui-section:nth-child(odd) {
+    background-color: white;
+}
+
+.iui-panel {
+    padding: 20px;
+    width: 100%;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;
+}
+.iui-panel-left {
+    text-align: left;
+}
+
+.iui-hoverable {
+    transition: all 0.2s;
+}
+.iui-hoverable:hover {
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.iui-shadow {
+    box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.15);
+}
+
+/*Buttons */
+.iui-btn {
+    padding: 15px 30px;
+    border:none;
+    cursor:pointer;
+    outline:none;
+    font-size:18px;
+}
+.iui-btn-nobg {
+    padding: 15px 30px;
+    cursor:pointer;
+    outline:none;
+    font-size:18px;
+    background:none;
+}
+.iui-btn-xs {
+    padding: 8px 10px;
+    border:none;
+    cursor:pointer;
+    outline:none;
+    font-size:14px;
+}
+.iui-btn-s {
+    padding: 15px 30px;
+}
+.iui-btn-l {
+    padding: 30px 55px;
+}
+.iui-btn-full {
+    width: 100%;
+}
+.iui-round {
+    border-radius: 8px;
+}
+.iui-round2 {
+    border-radius: 30px;
+}
+.iui-padding-1 {
+    padding: 5px 0px;
+}
+.iui-padding-2 {
+    padding: 10px 0px;
+}
+.iui-padding-3 {
+    padding: 15px 0px;
+}
+.iui-padding-4 {
+    padding: 20px 0px;
+}
+.iui-padding-5 {
+    padding: 25px 0px;
+}
+.iui-padding-6 {
+    padding: 35px 0px;
+}
+.iui-padding-7 {
+    padding: 50px 0px;
+}
+.iui-padding-8 {
+    padding: 70px 0px;
+}
+
+.iui-margin-vertical-none {
+    margin: 0px auto;
+}
+.iui-margin-vertical-5 {
+    margin: 5px auto;
+}
+.iui-margin-vertical-10 {
+    margin: 10px auto;
+}
+.iui-margin-vertical-15 {
+    margin: 15px auto;
+}
+.iui-margin-vertical-20 {
+    margin: 20px auto;
+}
+.iui-margin-vertical-25 {
+    margin: 25px auto;
+}
+.iui-margin-vertical-30 {
+    margin: 30px auto;
+}
+.iui-margin-vertical-40 {
+    margin: 40px auto;
+}
+.iui-margin-vertical-50 {
+    margin: 50px auto;
+}
+.iui-margin-horizontal-none {
+    margin: auto 0px;
+}
+.iui-margin-horizontal-5 {
+    margin: auto 5px;
+}
+.iui-margin-horizontal-10 {
+    margin: auto 10px;
+}
+.iui-margin-horizontal-15 {
+    margin: auto 15px;
+}
+.iui-margin-horizontal-20 {
+    margin: auto 20px;
+}
+.iui-margin-horizontal-25 {
+    margin: auto 25px;
+}
+.iui-margin-horizontal-30 {
+    margin: auto 30px;
+}
+.iui-margin-horizontal-40 {
+    margin: auto 40px;
+}
+.iui-margin-horizontal-50 {
+    margin: auto 50px;
+}
+
+.iui-height-100 {
+    height: 100px;
+}
+.iui-height-200 {
+    height: 200px;
+}
+.iui-height-300 {
+    height: 300px;
+}
+.iui-height-400 {
+    height: 400px;
+}
+.iui-height-500 {
+    height: 500px;
+}
+.iui-height-600 {
+    height: 600px;
+}
+
+
+.iui-display-container {
+    position: relative;
+    min-height: 50px;
+}
+.iui-display-container .iui-topleft {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+.iui-display-container .iui-topright {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    left: auto;
+}
+.iui-display-container .iui-topmid {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+}
+.iui-display-container .iui-middle {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    text-align: center;
+}
+.iui-display-container .iui-bottomleft {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+}
+.iui-display-container .iui-bottomright {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+}
+.iui-display-container .iui-bottommid {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+
+.iui-clear { 
+    clear: both;
+}
+.iui-clear-l {
+    clear:left;
+}
+.iui-clear-r {
+    clear:right;
+}
+clear {
+   clear: both; 
+}
+
+
+/*Carousels*/
+.iui-container-slide {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.iui-contimg {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.iui-carousel {
+    position: relative;
+    height: 100%;   
+}
+
+.iui-carousel img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+.iui-table {
+    position: relative;
+    width: auto;
+    border: 1px solid #e1e1e1;
+    border-collapse: collapse;
+}
+.iui-table tr {
+    border: 1px solid #e1e1e1;
+    padding: 25px;
+}
+.iui-table tr:nth-child(even) {
+    background: #f3f3f3;
+}
+.iui-table th, .iui-table td {
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    text-align: left;
+}
+.iui-table i {
+    color: #47cc00;
+    margin-left: 20px;
+}
+.iui-table th {
+    font-weight: 600;
+}
+
+/* IUI Grid System */
+.iui-col,.iui-half,.iui-third,.iui-twothird,.iui-threequarter,.iui-quarter{float:left;width:100%}
+.iui-cols1{width:8.33333%;float:left}.iui-col-s2{width:16.66666%}.iui-col-s3{width:24.99999%;float:left}.iui-col-s4{width:33.33333%;float:left}
+.iui-col-s5{width:41.66666%;float:left}.iui-col-s6{width:49.99999%;float:left}.iui-col-s7{width:58.33333%;float:left}.iui-col-s8{width:66.66666%;float:left}
+.iui-col-s9{width:74.99999%;float:left}.iui-col-s10{width:83.33333%;float:left}.iui-col-s11{width:91.66666%;float:left}.iui-col-s12{width:99.99999%;float:left}
+@media (min-width:601px){.iui-col-m1{width:8.33333%;float:left}.iui-col-m2{width:16.66666%;float:left}.iui-col-m3,.iui-quarter{width:24.99999%;float:left}.iui-col-m4,.iui-third{width:33.33333%;float:left}
+.iui-col-m5{width:41.66666%;float:left}.iui-col-m6,.iui-half{width:49.99999%;float:left}.iui-col-m7{width:58.33333%}.iui-col-m8,.iui-twothird{width:66.66666%}
+.iui-col-m9,.iui-threequarter{width:74.99999%;float:left}.iui-col-m10{width:83.33333%;float:left}.iui-col-m11{width:91.66666%;float:left}.iui-col-m12{width:99.99999%;float:left}}
+@media (min-width:993px){.iui-col-l1{width:8.33333%;float:left}.iui-col-l2{width:16.66666%;float:left}.iui-col-l3{width:24.99999%;float:left}.iui-col-l4{width:33.33333%;float:left}
+.iui-col-l5{width:41.66666%;float:left}.iui-col-l6{width:49.99999%;float:left}.iui-col-l7{width:58.33333%;float:left}.iui-col-l8{width:66.66666%;float:left}
+.iui-col-l9{width:74.99999%;float:left}.iui-col-l10{width:83.33333%;float:left}.iui-col-l11{width:91.66666%;float:left}.iui-col-l12{width:99.99999%;float:left}}
+.iui-col-rest{overflow:hidden;}
+.iui-row:after, .iui-row:before, .iui-codebox:after, .iui-codebox:before, .iui-cont:after, .iui-cont:before {content:"";display:table;clear:both}
+    
+
+
+.iui-floatleft {
+    float:left;
+}
+.iui-floatright {
+    float:right;
+}
+
+
+.iui-codebox {
+    position: relative;
+    margin-bottom: 50px;
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+}
+
+.iui-menu a {
+    position:relative;
+    text-decoration:none;
+    color: black;
+    transition: all 0.3s;
+}
+
+.iui-nav {
+    position:fixed;
+    z-index:900;
+}
+
+
+
+
+
+
+
+
